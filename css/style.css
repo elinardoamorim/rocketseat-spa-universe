@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  background-image: url(../assets/mountains-universe-1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+
+  padding: 4rem 0rem 4rem 7.2rem;
+}
+
+nav a {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  color: #C4C4CC;
+}
+
+.pageHome {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15.4rem;
+}
+
+.pageHome h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.0rem;
+  color: #E1E1E6; 
+}
+
+.pageHome button {
+  width: 19.5rem;
+  height: 4.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pageHome button:hover {
+  background: #FFFFFF;
+  color: #02799D;
+}
+
+.pageUniverso, .pageExploracao {
+  padding: 4rem 0 0 10.2rem;
+}
+
+.pageUniverso h1, .pageExploracao h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 6.0rem;
+  color: #E1E1E6;
+}
+
+.pageUniverso p, .pageExploracao p {
+  width: 64.8rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.9rem;
+  color: #E1E1E6;
+  text-align: justify;
+
+  margin-top: 1.6rem;
+}
+
+.active{
+  color: #FFFFFF;
+  font-size: 2.4rem;
+}
