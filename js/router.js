@@ -28,12 +28,24 @@ export class Router {
 
     if(pathname == '/universo') {
       document.body.style.backgroundImage = 'url(../assets/mountains-universe-2.png)'
+      document.querySelector("#btnHome").classList.remove("active")
+      document.querySelector("#btnUniverso").classList.add("active")
+      document.querySelector("#btnExploracao").classList.remove("active")
     } else if(pathname == '/exploracao') {
       document.body.style.backgroundImage = 'url(../assets/mountains-universe-3.png)'
+      document.querySelector("#btnHome").classList.remove("active")
+      document.querySelector("#btnUniverso").classList.remove("active")
+      document.querySelector("#btnExploracao").classList.add("active")
     } else if(pathname == '/'){
       document.body.style.backgroundImage = 'url(../assets/mountains-universe-1.png)'
+      document.querySelector("#btnHome").classList.add("active")
+      document.querySelector("#btnUniverso").classList.remove("active")
+      document.querySelector("#btnExploracao").classList.remove("active")
     } else {
       document.body.style.backgroundImage = 'url(../assets/mountains-universe-1.png)'
+      document.querySelector("#btnHome").classList.remove("active")
+      document.querySelector("#btnUniverso").classList.remove("active")
+      document.querySelector("#btnExploracao").classList.remove("active")
     }
   }
 }
